@@ -14,7 +14,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <Route component={Navbar} />
+      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/rooms/" component={Rooms} />
