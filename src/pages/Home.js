@@ -1,11 +1,12 @@
 import React from 'react';
-import { directive } from '@babel/types';
+import Hero from '../components/Hero'
+import PropTypes from 'prop-types'
 
 const Home = () => {
     return ( 
-        <div>
-            This is Home page 
-        </div>
+        <Hero hero="defaultHero" >
+
+        </Hero>
      );
 }
  
