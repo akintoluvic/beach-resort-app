@@ -13,9 +13,12 @@ import './App.css';
 function App() {
   return (
     <>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/rooms/" component={Rooms} />
-      <Route exact path="/rooms/:slug" component={SingleRoom} /> 
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/rooms/" component={Rooms} />
+        <Route exact path="/rooms/:slug" component={SingleRoom} /> 
+        <Route component={Error} />
+      </Switch>
     </> 
     );
 }
