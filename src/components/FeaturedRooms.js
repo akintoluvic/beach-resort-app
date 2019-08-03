@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { RoomContext } from "../Context";
+import Room from "./Room";
+import Title from "./Title"
+import Loading from "./Loading";
 
 
 export default class FeaturedRooms extends Component {
@@ -10,6 +13,7 @@ export default class FeaturedRooms extends Component {
         return (
             <div>
                  from FeaturedRooms
+                 <Loading />
             </div>
         )
     }
