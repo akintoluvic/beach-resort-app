@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Services from '../components/Services';
 import Banner from '../components/Banner';
 import { Link } from 'react-router-dom'
+import FeaturedRooms from '../components/FeaturedRooms'
 
 import PropTypes from 'prop-types'
 
@@ -18,6 +19,7 @@ const Home = () => {
                 </Banner>
         </Hero>
         <Services />
+        <FeaturedRooms />
         </>
      );
 }
