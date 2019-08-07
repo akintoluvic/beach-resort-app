@@ -12,7 +12,7 @@ export default function RoomsFilter() {
     const context = useContext(RoomContext);
     const {
         rooms, handleChange, type, capacity, 
-        price, minPrice, maxPRice, 
+        price, minPrice, maxPrice, 
         minSize, maxSize, pets
     } = context;
     // get unique types
@@ -51,6 +51,13 @@ export default function RoomsFilter() {
                      </select>
                 </div>
                 {/* end room capacity */}
+                {/* room price */}
+                <div className="form-group">
+                    <label htmlFor="price">Room price ${price}</label>
+                    <input type="range" name="price" min={minPrice} max={maxPrice} 
+                        id="price" value={price} onChange={handleChange} className="form-control" />
+                </div>
+                {/* end room price */}
             </form>
         </section>
     );
