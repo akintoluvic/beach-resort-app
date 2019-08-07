@@ -75,6 +75,8 @@ class RoomProvider extends Component {
         // transform value
         capacity = parseInt(capacity);
         price = parseInt(price);
+        minSize = parseInt(minSize);
+        maxSize = parseInt(maxSize);
         // filter by type
         if (type !== 'all') {
            tempRooms = tempRooms.filter(room => room.type === type);
@@ -85,6 +87,8 @@ class RoomProvider extends Component {
          }
          // filter by capacity
         tempRooms = tempRooms.filter(room => room.price <= price);
+         // filter by size
+        // tempRooms = tempRooms.filter(room => room.minSize <= minSize);
 
         // change state
         this.setState({
