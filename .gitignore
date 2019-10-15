@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-
+.evn.development
 # production
 /build
 
